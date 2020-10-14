@@ -49,11 +49,16 @@ public class Student {
 
 
    //Updating the Fees paid
-   public void updateFeesPaid(int fees) {
-      this.feesPaid = this.getFeesPaid() + fees;
+   public void payFees(int fees) {
+      feesPaid += fees;
+      School.updateTotalMoneyEarned(feesPaid);
    }
 
    public int getFeesPaid() {
       return feesPaid;
+   }
+
+   public int getRemainingFees() {
+      return feesTotal - feesPaid;
    }
 }
