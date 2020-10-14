@@ -24,8 +24,23 @@ public class Student {
       this.feesTotal = 30000;
    }
 
-
    // Not going to alter Student ID and Name
+
+   public int getId() {
+      return id;
+   }
+
+   public String getName() {
+      return name;
+   }
+
+   public int getGrade() {
+      return grade;
+   }
+
+   public int getFeesTotal() {
+      return feesTotal;
+   }
 
    //Updating the Students Grade
    public void setGrade(int grade) {
