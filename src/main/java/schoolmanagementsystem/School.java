@@ -40,7 +40,7 @@ public class School {
    }
 
    public static void updateTotalMoneySpend(int moneySpend) {
-      totalMoneySpend -= moneySpend;
+      totalMoneyEarned -= moneySpend;
    }
 
    public int getTotalMoneySpend() {

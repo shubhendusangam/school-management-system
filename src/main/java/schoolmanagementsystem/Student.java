@@ -61,4 +61,12 @@ public class Student {
    public int getRemainingFees() {
       return feesTotal - feesPaid;
    }
+
+   @Override
+   public String toString() {
+      return "Student's " +
+            " id is " + id +
+            " and name is " + name +
+            " paid fees so far " + feesPaid ;
+   }
 }
